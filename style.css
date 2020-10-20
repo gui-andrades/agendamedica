@@ -4,3 +4,16 @@
     background-color: #242424;
     color: white;
 }
+
+.border{
+    border: 1px solid white;
+    min-height: 20px;
+}
+
+.agenda{
+    list-style: none;
+}
+
+.info{
+
+}
