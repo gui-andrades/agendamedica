@@ -4,73 +4,59 @@
         <meta charset="utf-8">
         <title>Agenda Médica</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="iconic/font/css/open-iconic-bootstrap.min.css">
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row ml-2 mr-2 mt-3 h-200">
+            <div class="row ml-2 mr-2 mt-3">
                 <div class="col-8 pr-3">
-                    <div class="agenda container-fluid">
-                        <div class="row">
+                    <div class="container-fluid">
+                        <div class="row agenda">
                             <div class="col-2 text-center marcacao data">
-                                <br>Data<br><br>
-                                Hora
+                                <span class="dia-mes">13 Jul</span>
+                                <span class="hora btn text-white border border-white">
+                                    08:00
+                                </span>
                             </div>
-                            <div class="col-9 text-left marcacao dados">
-                                Paciente<br>
-                                Médico<br><br>
-                                Telefone
-                            </div>
-                            <div class="col-1 text-center marcacao botaodireita">
-                                X
-                            </div>
+                            <a class="col-9 text-left marcacao dados">
+                                Abelardo Castro de Araújo Júnior<br>
+                                Daniela Trindade<br><br>
+                                (31) 9988 - 7198
+                                <span class="status">AGENDADO</span>
+                            </a>
+                            <a class="col-1 text-center marcacao botaodireita">
+                                <span class="oi oi-x"></span>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-2 text-center marcacao data">
-                                <br>Data<br><br>
-                                Hora
-                            </div>
-                            <div class="col-9 text-left marcacao dados">
-                                Paciente<br>
-                                Médico<br><br>
-                                Telefone
-                            </div>
-                            <div class="col-1 text-center marcacao botaodireita">
-                                X
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 text-center marcacao data">
-                                <br>Data<br><br>
-                                Hora
-                            </div>
-                            <div class="col-9 text-left marcacao dados">
-                                Paciente<br>
-                                Médico<br><br>
-                                Telefone
-                            </div>
-                            <div class="col-1 text-center marcacao botaodireita">
-                                X
-                            </div>
-                        </div>
-                        <div class="row">
+                        <div class="row agenda">
                             <div class="col-2 text-center marcacao data ultima">
-                                <br>Data<br><br>
-                                Hora
+                                <span class="dia-mes">13 Jul</span>
+                                <span class="hora btn text-white border border-white">
+                                    08:30
+                                </span>
                             </div>
-                            <div class="col-9 text-left marcacao dados ultima">
-                                Paciente<br>
-                                Médico<br><br>
-                                Telefone
-                            </div>
-                            <div class="col-1 text-center marcacao botaodireita ultima">
-                                X
-                            </div>
+                            <a class="col-9 text-left marcacao dados ultima">
+                                DISPONÍVEL
+                            </a>
+                            <a class="col-1 marcacao botaodireita ultima">
+                                <span class="oi oi-plus"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 info text-center" style="border-radius: 20px;">
-                    <span style="background-color: transparent;">Informações</span>
+                <div class="col-4 info">
+                    <i class="fas fa-portrait foto"></i><br><br>
+                    <div class="nome">ABELARDO CASTRO DE ARAUJO JUNIOR</div><br>
+                    Data Hora<span style="padding-left: 60%; background: inherit;">Status</span><br>
+                    <span style="background: inherit;">
+                        "Telefone"      "Email" <br>
+                        Telefone        Email <br><br>
+                        <hr><br>
+                        Médico <br>
+                        Tipo de consulta
+                    </span>
                 </div>
             </div>
         </div>

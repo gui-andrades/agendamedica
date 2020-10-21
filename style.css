@@ -1,16 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: none;
+    padding: none;
     background-color: #242424;
     color: white;
 }
 
-.border{
-    border: 1px solid white;
-    min-height: 20px;
-}
-
 .agenda{
+    min-height: 120px;
 }
 
 .marcacao{
@@ -19,24 +15,86 @@
 }
 
 .data{
-    padding: 15px;
+    padding: none;
+    min-width: 100px;
     background-color: #383838;
     border-bottom: 1px solid #242424;
+    border-right: 2px solid #242424;
     border-radius: 20px 0px 0px 20px;
+}
+
+.dia-mes{
+    font-size: 1.5em;
+    background-color: inherit;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hora{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #383838;
+    pointer-events: none;
 }
 
 .dados{
     padding: 15px;
+    color: white;
     background-color: #505050;
     border-right: 2px solid #242424;
     border-bottom: 1px solid #242424;
 }
 
+.dados:hover{
+    color: orange;
+    text-decoration: none;
+    background-color: #404040;
+}
+
+.dados:hover > .status{
+    border-color: orange;
+}
+
+.status{
+    color: inherit;
+    border: 1px solid white;
+    padding: 5px 10px;
+    background: inherit;
+    border-radius: 20px;
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+}
+
 .botaodireita{
-    padding: 15px;
+    padding: 0px;
     background-color: #505050;
     border-bottom: 1px solid #242424;
     border-radius: 0px 20px 20px 0px;
+    align-items: baseline;
+}
+
+.botaodireita:hover{
+    background-color: #383838;
+}
+
+.botaodireita:hover>span{
+    color: orange;
+}
+
+.botaodireita>span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: transparent;
+    list-style: none;
 }
 
 .ultima{
@@ -44,7 +102,28 @@
 }
 
 .info{
+    padding: 20px;
     background-color: #383838;
     border-bottom: 1px solid #242424;
     box-shadow: 1px 2px black;
+    border-radius: 20px;
+}
+
+.foto{
+    font-size: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: inherit;
+    text-align: center;
+}
+
+.nome{
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: inherit;
+    text-align: center;
 }
