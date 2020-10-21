@@ -12,8 +12,26 @@
 
 .agenda{
     list-style: none;
+    border-radius: 20px;
+}
+
+.marcacao{
+    background-color: #383838;
 }
 
 .info{
+    background-color: #383838;
+}
 
+.data{
+    padding: 15px;
+}
+
+.dados{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 10%, rgba(255, 255, 255, 0.15) 90%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px 20px 20px 80px;
+}
+
+.botaodireita{
+    padding: 15px;
 }
