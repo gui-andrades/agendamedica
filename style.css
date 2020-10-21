@@ -11,27 +11,40 @@
 }
 
 .agenda{
-    list-style: none;
-    border-radius: 20px;
 }
 
 .marcacao{
-    background-color: #383838;
-}
-
-.info{
-    background-color: #383838;
+    box-shadow: 1px 2px black;
+    margin-bottom: 10px;
 }
 
 .data{
     padding: 15px;
+    background-color: #383838;
+    border-bottom: 1px solid #242424;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .dados{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 10%, rgba(255, 255, 255, 0.15) 90%, rgba(255, 255, 255, 0) 100%);
-    padding: 20px 20px 20px 80px;
+    padding: 15px;
+    background-color: #505050;
+    border-right: 2px solid #242424;
+    border-bottom: 1px solid #242424;
 }
 
 .botaodireita{
     padding: 15px;
+    background-color: #505050;
+    border-bottom: 1px solid #242424;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.ultima{
+    margin-bottom: 0px;
+}
+
+.info{
+    background-color: #383838;
+    border-bottom: 1px solid #242424;
+    box-shadow: 1px 2px black;
 }
