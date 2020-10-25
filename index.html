@@ -2,6 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agenda Médica</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -10,40 +11,8 @@
     </head>
     <body onload="mostra()">
         <div class="container-fluid">
-            <div class="row mt-3">
-                <div class="col-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                    <div class="container-fluid" id="agenda">
-                        <div class="row" id="agendado">
-                            <div class="col-2 text-center marcacao data">
-                                <span class="dia-mes-agenda"></span>
-                                <span class="hora-agenda btn text-white border border-white"></span>
-                            </div>
-                            <a class="col-9 text-left marcacao dados">
-                                <span class="nome-agenda"></span>
-                                <span class="medico-agenda"></span>
-                                <span class="icone-telefone fas fa-phone-alt"></span>
-                                <span class="telefone-agenda"></span>
-                                <span class="status-agenda"></span>
-                            </a>
-                            <a class="col-1 text-center marcacao botaodireita">
-                                <span class="oi oi-x"></span>
-                            </a>
-                        </div>
-                        <div class="row" id="disponivel">
-                            <div class="col-2 text-center marcacao data">
-                                <span class="dia-mes-agenda"></span>
-                                <span class="hora-agenda btn text-white border border-white"></span>
-                            </div>
-                            <a class="col-9 text-center marcacao dados">
-                                <span class="disponivel"></span>
-                            </a>
-                            <a class="col-1 marcacao botaodireita">
-                                <span class="oi oi-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <div class="row mt-3 flex-row-reverse">
+                <div class="col-lg-5 col-md-12">
                     <div class="info">
                         <i class="fas fa-portrait foto-info"></i>
                         <div class="nome-info">ABELARDO CASTRO DE ARAUJO JUNIOR</div>
@@ -65,8 +34,43 @@
                         <span class="medico-info">Daniela Trindade</span>
                     </div>
                 </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="container-fluid" id="agenda">
+                        <div class="row" id="agendado">
+                            <div class="col-2 text-center data">
+                                <span class="dia-mes-agenda"></span>
+                                <span class="hora-agenda btn text-white border border-white"></span>
+                            </div>
+                            <a class="col-9 text-left dados">
+                                <span class="nome-agenda"></span>
+                                <span class="medico-agenda"></span>
+                                <span class="icone-telefone fas fa-phone-alt"></span>
+                                <span class="telefone-agenda"></span>
+                                <span class="status-agenda"></span>
+                            </a>
+                            <a class="col-1 text-center botaodireita">
+                                <span class="oi oi-x"></span>
+                            </a>
+                        </div>
+                        <div class="row" id="disponivel">
+                            <div class="col-2 text-center data">
+                                <span class="dia-mes-agenda"></span>
+                                <span class="hora-agenda btn text-white border border-white"></span>
+                            </div>
+                            <a class="col-9 text-center dados">
+                                <span class="disponivel"></span>
+                            </a>
+                            <a class="col-1 botaodireita">
+                                <span class="oi oi-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="agenda.js"></script>
     </body>
 </html>

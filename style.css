@@ -15,17 +15,13 @@ body{
     margin-right: 0;
 }
 
-.marcacao{
-    box-shadow: 1px 2px black;
-    margin-bottom: 10px;
-}
-
 .data{
     padding: 15px 0;
     min-width: 100px;
     background-color: #383838;
-    border-bottom: 1px solid #242424;
-    border-right: 2px solid #242424;
+    margin-bottom: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -47,8 +43,9 @@ body{
     padding: 15px 0;
     color: white;
     background-color: #505050;
-    border-right: 2px solid #242424;
-    border-bottom: 1px solid #242424;
+    margin-bottom: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .dados:hover{
@@ -57,7 +54,7 @@ body{
     background-color: #404040;
 }
 
-.dados:hover > .status{
+.dados:hover > .status-agenda{
     border-color: orange;
 }
 
@@ -114,11 +111,12 @@ body{
 
 .botaodireita{
     padding: 0px;
-    background-color: #505050;
-    border-bottom: 1px solid #242424;
-    border-radius: 0px 20px 20px 0px;
-    align-items: baseline;
     color: inherit;
+    background-color: #505050;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .botaodireita:hover{
@@ -133,7 +131,6 @@ body{
     transform: translate(-50%, -50%);
     color: inherit;
     background-color: transparent;
-    list-style: none;
 }
 
 .ultima{
@@ -143,10 +140,11 @@ body{
 .info{
     padding: 20px;
     background-color: #383838;
-    border-bottom: 1px solid #242424;
-    box-shadow: 1px 2px black;
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
     border-radius: 20px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .foto-info{

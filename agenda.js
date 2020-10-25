@@ -1,41 +1,39 @@
 const agendamentos=[{
-        data: '13 Jul',
-        horario: '8:00',
+        data: new Date('2020-07-13T08:00:00-03:00'),
         nome: 'Guilherme Andrade Silva',
         status: 'agendado',
         medico: 'Fabrício Maciel',
         telefone: '(31) 98346-8649',
     },{
-        data: '13 Jul',
-        horario: '8:30',
+        data: new Date('2020-07-13T08:30:00-03:00'),
         nome: 'Mateus Morais Dutra',
         status: 'atrasado',
         medico: 'Daniela Trindade',
         telefone: '(31) 98481-6258',
     },{
-        data: '13 Jul',
-        horario: '9:00',
+        data: new Date('2020-07-13T09:00:00-03:00'),
         nome: 'Abelardo Castro de Araújo Júnior',
         status: 'atrasado',
         medico: 'Daniela Trindade',
         telefone: '(31) 99988-7198',
     },{
-        data: '13 Jul',
-        horario: '10:00',
+        data: new Date('2020-07-13T10:30:00-03:00'),
         nome: 'Francisvaldo Feitosa da Silva',
         status: 'agendado',
         medico: 'Márcio Rodrigues de Castro',
-        telefone: '(31) 98346-8649',
+        telefone: '(31) 98544-9273',
     }
 ]
+
+var meses = ["Jan", "Fev", "Mar", "Abr", "Maio", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
 
 function adicionaEntrada(estaAgendado, hora, i, j){
     var entradaAgenda = disponivel.cloneNode(true)
     if(estaAgendado){
         entradaAgenda = agendado.cloneNode(true)
         entradaAgenda.id=i
-        entradaAgenda.querySelector('.dia-mes-agenda').innerText = agendamentos[j].data
-        entradaAgenda.querySelector('.hora-agenda').innerText = agendamentos[j].horario
+        entradaAgenda.querySelector('.dia-mes-agenda').innerText = agendamentos[j].data.getDate() + ' ' + meses[agendamentos[j].data.getMonth()]
+        entradaAgenda.querySelector('.hora-agenda').innerText = (agendamentos[j].data.getHours() < 10 ? '0' : '') + agendamentos[j].data.getHours() + ':' + (agendamentos[j].data.getMinutes() < 10 ? '0' : '') + agendamentos[j].data.getMinutes()
         entradaAgenda.querySelector('.nome-agenda').innerText = agendamentos[j].nome
         entradaAgenda.querySelector('.medico-agenda').innerText = agendamentos[j].medico
         entradaAgenda.querySelector('.telefone-agenda').innerText = agendamentos[j].telefone
@@ -52,18 +50,19 @@ function adicionaEntrada(estaAgendado, hora, i, j){
 function mostra(){
     var agendado=document.getElementById('agendado')
     var disponivel=document.getElementById('disponivel')
+    var horaInicio = 8
+    var horaFim = 18
     var hora=''
     var estaAgendado = false
     for (var i=0; i<20; i++){
         if(i%2==0){
             hora=(i/2 + 8) + ':00'
-            console.log(hora)
         }else{
             hora=((i-1)/2 + 8) + ':30'
-            console.log(hora)
         }
         for(var j=0;j<agendamentos.length;j++){
-            if(hora==agendamentos[j].horario){
+            var horaMarcada = agendamentos[j].data.getHours() + ':' + (agendamentos[j].data.getMinutes() < 10 ? '0' : '') + agendamentos[j].data.getMinutes()
+            if(hora==horaMarcada){
                 estaAgendado = true
                 break
             }
