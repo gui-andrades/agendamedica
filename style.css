@@ -4,9 +4,15 @@
     background-color: #242424;
     color: white;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
 
 .agenda{
     min-height: 120px;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .marcacao{
@@ -15,7 +21,7 @@
 }
 
 .data{
-    padding: none;
+    padding: 15px 0;
     min-width: 100px;
     background-color: #383838;
     border-bottom: 1px solid #242424;
@@ -23,27 +29,20 @@
     border-radius: 20px 0px 0px 20px;
 }
 
-.dia-mes{
+.dia-mes-agenda{
     font-size: 1.5em;
     background-color: inherit;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.hora{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.hora-agenda{
+    margin-top: 30px;
     color: white;
     background-color: #383838;
     pointer-events: none;
 }
 
 .dados{
-    padding: 15px;
+    padding: 15px 0;
     color: white;
     background-color: #505050;
     border-right: 2px solid #242424;
@@ -60,15 +59,55 @@
     border-color: orange;
 }
 
-.status{
+.nome-agenda{
+    display: block;
+    text-align: left;
+    color: inherit;
+    background: inherit;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.medico-agenda{
+    display: block;
+    text-align: left;
+    color: inherit;
+    background: inherit;
+    margin-bottom: 30px;
+}
+
+.telefone-agenda{
+    color: inherit;
+    background: inherit;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.icone-telefone{
+    background: inherit;
+    color: inherit;
+}
+
+.status-agenda{
     color: inherit;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 3px 7px;
     background: inherit;
     border-radius: 20px;
+    float: right;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.disponivel{
+    background: inherit;
+    color: inherit;
     position: absolute;
-    right: 2%;
-    bottom: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .botaodireita{
@@ -77,13 +116,11 @@
     border-bottom: 1px solid #242424;
     border-radius: 0px 20px 20px 0px;
     align-items: baseline;
+    color: inherit;
 }
 
 .botaodireita:hover{
     background-color: #383838;
-}
-
-.botaodireita:hover>span{
     color: orange;
 }
 
@@ -92,7 +129,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: inherit;
     background-color: transparent;
     list-style: none;
 }
@@ -107,18 +144,20 @@
     border-bottom: 1px solid #242424;
     box-shadow: 1px 2px black;
     border-radius: 20px;
+    height: auto;
 }
 
-.foto{
+.foto-info{
     font-size: 100px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     background: inherit;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.nome{
+.nome-info{
     font-weight: bold;
     font-size: 1.2em;
     position: relative;
@@ -126,4 +165,47 @@
     transform: translateX(-50%);
     background: inherit;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.data-hora-info{
+    background: inherit;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.status-info{
+    color: inherit;
+    border: 1px solid white;
+    padding: 3px 7px;
+    background: inherit;
+    border-radius: 20px;
+    float: right;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contato-info{
+    background: inherit;
+    padding: 0 30px;
+}
+
+.telefone-info{
+    background: inherit;
+    border-right: 1px solid black;
+    padding: 0;
+    text-align: center;
+}
+
+.email-info{
+    background: inherit;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.medico-info{
+    background: inherit;
+    font-weight: bold;
+    padding: 0 30px;
 }
