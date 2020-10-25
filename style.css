@@ -32,6 +32,7 @@ body{
 .dia-mes-agenda{
     font-size: 1.5em;
     background-color: inherit;
+    display: block;
 }
 
 .hora-agenda{
@@ -39,6 +40,7 @@ body{
     color: white;
     background-color: #383838;
     pointer-events: none;
+    display: block;
 }
 
 .dados{
