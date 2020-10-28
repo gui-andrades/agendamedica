@@ -1,7 +1,7 @@
 *{
     margin: none;
     padding: none;
-    background-color: #242424;
+    background-color: #888888;
     color: white;
 }
 body{
@@ -117,6 +117,7 @@ body{
     border-bottom: 2px solid black;
     border-right: 1px solid black;
     border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
 }
 
 .botaodireita:hover{
@@ -143,15 +144,13 @@ body{
     border-bottom: 2px solid black;
     border-right: 1px solid black;
     border-radius: 20px;
-    height: auto;
     margin-bottom: 20px;
+    text-align: center;
+    min-height: 150px;
 }
 
 .foto-info{
     font-size: 100px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     background: inherit;
     text-align: center;
     margin-bottom: 20px;
@@ -160,18 +159,23 @@ body{
 .nome-info{
     font-weight: bold;
     font-size: 1.2em;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     background: inherit;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .data-hora-info{
+    text-align: left;
+    color: inherit;
     background: inherit;
     margin-bottom: 30px;
     padding: 0 30px;
+}
+
+.data-hora{
+    color: inherit;
+    background: inherit;
 }
 
 .status-info{
@@ -193,8 +197,12 @@ body{
 
 .telefone-info{
     background: inherit;
-    border-right: 1px solid black;
     padding: 0;
+    text-align: center;
+}
+.texto-telefone-info, .numero-telefone-info, .texto-email-info, .valor-email-info{
+    background: inherit;
+    color: inherit;
     text-align: center;
 }
 
@@ -204,8 +212,43 @@ body{
     text-align: center;
 }
 
+.icone-email{
+    background: inherit;
+    color: inherit;
+}
+
 .medico-info{
     background: inherit;
     font-weight: bold;
     padding: 0 30px;
+}
+
+.info-disp{
+    padding: 20px;
+    background-color: #383838;
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 190px;
+}
+
+.marca{
+    color: inherit;
+    background: inherit;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.marca:hover{
+    color: #505050;
+    background-color: orange;
+    border-color: orange;
+    text-decoration: none;
 }
